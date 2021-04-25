@@ -1,3 +1,11 @@
+- install
+```bash
+cd ./github_fastgit_mirrors
+chmod +x github_fastgit_wget
+chmod +x github_fastgit_curl
+echo "PATH=\$PATH:\"${PWD}\"" >> /etc/bashrc
+```
+
 - use
 ```bash
 # start
