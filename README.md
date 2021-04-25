@@ -1,10 +1,19 @@
-- install
+# 利用[fastgit](https://fastgit.org/)加速[github](https://github.com/)资源的访问。
+
+## 感谢[fastgit](https://fastgit.org/)
+
+## 安装与使用
+
+- 安装
 ```bash
 cd ./github_fastgit_mirrors
 chmod +x github_fastgit_git
 chmod +x github_fastgit_wget
 chmod +x github_fastgit_curl
 echo "PATH=\$PATH:\"${PWD}\"" >> /etc/bashrc
+# echo "PATH=\$PATH:\"${PWD}\"" >> ~/.bash_profile
+source ~/etc/bashrc
+# source ~/.bash_profile
 ```
 
 - 单独使用（可避免全局污染）
