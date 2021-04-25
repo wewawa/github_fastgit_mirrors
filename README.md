@@ -28,9 +28,15 @@ github_fastgit_curl **
 
 - 全局使用（==会 alias 系统的 `git, wget, curl`, 用完记得关掉==）
 ```bash
-# start
+# 全局开启
 source ./github_mirrors_start
-# stop
+
+# 直接使用
+git **
+wget **
+curl **
+
+# 全局关闭
 source ./github_mirrors_stop
 ```
 
