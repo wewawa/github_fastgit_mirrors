@@ -1,14 +1,8 @@
-- install
-```bash
-cd github_fastgit_mirrors
-chmod +x *.sh
-echo ${PWD} >> ~/.bash_profile
-```
-
 - use
 ```bash
 # start
-github_mirrors_start.sh
+source ./github_mirrors_start
 # stop
-github_mirrors_stop.sh
+source ./github_mirrors_stop
 ```
+
