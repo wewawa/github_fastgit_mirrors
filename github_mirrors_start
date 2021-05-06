@@ -1,6 +1,7 @@
 # git config --global url."https://hub.fastgit.org".insteadOf https://github.com
 # git config --global url."http://hub.fastgit.org".insteadOf http://github.com
 alias git=github_fastgit_git
+alias "/usr/bin/git"=github_fastgit_git
 
 alias wget=github_fastgit_wget
 alias curl=github_fastgit_curl
