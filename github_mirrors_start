@@ -1,7 +1,18 @@
+# 是否是 mac
+isDarwin() {
+    if [[ "$(uname)" == "Darwin" ]]; then
+        return 0
+    fi    
+    return 1
+}
+
 # git config --global url."https://hub.fastgit.org".insteadOf https://github.com
 # git config --global url."http://hub.fastgit.org".insteadOf http://github.com
 alias git=github_fastgit_git
-alias "/usr/bin/git"=github_fastgit_git
+if test isDrawin
+then
+    alias "/usr/bin/git"=github_fastgit_git # only mac can use
+fi
 
 alias wget=github_fastgit_wget
 alias curl=github_fastgit_curl
