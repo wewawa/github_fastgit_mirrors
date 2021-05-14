@@ -72,7 +72,8 @@ source ./github_mirrors_stop
 ```bash
 
 # 开启
-# 在 ~/.bashrc 中添加 source {本软件路径}/github_mirrors_start
+# 在 ~/.bashrc 中添加或打开注释 source {本软件路径}/github_mirrors_start
+source ~/.bashrc
 
 # 接下来直接使用即可
 # git **
@@ -81,7 +82,8 @@ source ./github_mirrors_stop
 # pod install, npm install, :PluginInstall
 
 # 关闭
-# 在 ~/.bashrc 中删除 source {本软件路径}/github_mirrors_start
+# 在 ~/.bashrc 中注释掉或删除 source {本软件路径}/github_mirrors_start
+source ~/.bashrc
 
 ```
 
