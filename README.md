@@ -10,16 +10,21 @@ cd ./github_fastgit_mirrors
 chmod +x github_fastgit_git
 chmod +x github_fastgit_wget
 chmod +x github_fastgit_curl
+
+echo "" >> ~/.bashrc
+echo "GITHUB_FASTGIT_HOME=$PWD" >> ~/.bashrc
+echo 'export PATH=$PATH:$GITHUB_FASTGIT_HOME' >> ~/.bashrc
+source ~/.bashrc
 ```
 
 - 单独使用（可避免全局污染）
 ```bash
-# git **
-./github_fastgit_git **
-# wget **
-./github_fastgit_wget **
-# curl **
-./github_fastgit_curl **
+# git ** 用以下代替
+github_fastgit_git **
+# wget ** 用以下代替
+github_fastgit_wget **
+# curl ** 用以下代替
+github_fastgit_curl **
 ```
 
 - 全局使用（==会 alias 系统的 `git, wget, curl`, 用完记得关掉==）
@@ -38,7 +43,7 @@ ios 开发中在 pod install 可能拉半天都拉不下来；
 # 单次会话中开启
 source ./github_mirrors_start
 # 或直接全局开启
-在 /etc/bashrc 中添加 source {本软件路径}/github_mirrors_start
+在 ~/.bashrc 中添加 source {本软件路径}/github_mirrors_start
 
 # 接下来直接使用即可
 git **
@@ -50,7 +55,7 @@ curl **
 # 单次会话中关系
 source ./github_mirrors_stop
 # 全局关闭
-# 在 /etc/bashrc 中删除 source {本软件路径}/github_mirrors_start
+# 在 ~/.bashrc 中删除 source {本软件路径}/github_mirrors_start
 
 ```
 
