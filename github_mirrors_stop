@@ -9,8 +9,7 @@ isDarwin() {
 # git config --global --unset url.https://hub.fastgit.org.insteadof
 # git config --global --unset url.http://hub.fastgit.org.insteadof
 unalias git
-if test isDrawin
-then
+if isDarwin; then
     unalias "/usr/bin/git" # only mac can use
 fi
 
