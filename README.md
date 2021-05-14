@@ -38,7 +38,7 @@ ios 开发中在 pod install 可能拉半天都拉不下来；
 # 单次会话中开启
 source ./github_mirrors_start
 # 或直接全局开启
-在 /etc/bashrc 中添加 source {本软件路径}/github_mirrors_start
+# 在 /etc/bashrc 中添加 source {本软件路径}/github_mirrors_start
 
 # 接下来直接使用即可
 git **
